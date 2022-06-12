@@ -1,0 +1,192 @@
+/* 
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+
+- FONT SIZES (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100%;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.93rem;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  line-height: 1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+/*---------- Big containers ----------*/
+.intro-container {
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+  text-align: center;
+
+  width: 33rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+}
+
+/*---------- Intro ----------*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.intro-heading {
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  line-height: 1.4;
+}
+
+.intro-heading span {
+  font-weight: 600;
+}
+
+.intro-text {
+  line-height: 1.7;
+}
+
+/*----- Card -----*/
+.two-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.card-container {
+  background-color: #fff;
+  position: relative;
+
+  width: 21.5rem;
+  height: 15rem;
+  border-radius: 8px;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.12);
+
+  padding: 1.5rem 1.5rem 5rem 1.5rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 0.5rem;
+}
+
+.info--heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.info--text {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.card-icon {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.8rem;
+
+  width: 3.8rem;
+}
+
+.card-cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  grid-row: 1 / -1;
+  align-self: center;
+}
+
+.card-red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card-yellow {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  grid-column: 2 / 3;
+}
+
+.card-blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  grid-column: 3 / -1;
+  grid-row: 1 / -1;
+}
+
+/*---------- Attribution ----------*/
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */ ;

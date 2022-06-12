@@ -1,0 +1,113 @@
+/* Desktop-first flow */
+/* Below 1104px */
+@media (max-width: 69em) {
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-cyan {
+    grid-column: 1 / 2;
+    align-self: flex-start;
+  }
+
+  .card-blue {
+    grid-column: 1 / 2;
+    align-self: flex-end;
+  }
+}
+
+/* Below 736px */
+@media (max-width: 46em) {
+  section {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    gap: 4rem;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .two-cards-container {
+    gap: 2.5rem;
+  }
+
+  .card-cyan {
+    align-self: center;
+  }
+
+  .card-blue {
+    align-self: center;
+  }
+}
+
+/* Below 512px */
+@media (max-width: 32em) {
+  .intro-container {
+    width: 24rem;
+  }
+
+  .intro-heading {
+    font-size: 1.8rem;
+  }
+
+  .intro-text {
+    padding: 0 0.6rem;
+  }
+}
+
+/* Below 400px */
+@media (max-width: 25em) {
+  section {
+    gap: 4.5rem;
+  }
+
+  .intro-container {
+    width: 20rem;
+  }
+
+  .intro {
+    gap: 0.9rem;
+  }
+
+  .intro-heading {
+    font-size: 1.5rem;
+  }
+
+  .card-container {
+    width: 19.5rem;
+  }
+}
+
+/* Below 336px */
+@media (max-width: 21em) {
+  .intro-container {
+    width: 16rem;
+  }
+
+  .intro-heading {
+    font-size: 1.2rem;
+  }
+
+  .card-container {
+    width: 14.5rem;
+  }
+
+  .card-icon {
+    bottom: 1.5rem;
+    right: 1.5rem;
+
+    width: 3rem;
+  }
+}
