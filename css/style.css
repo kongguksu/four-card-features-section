@@ -68,7 +68,7 @@ body {
   line-height: 1;
 }
 
-section {
+main {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
